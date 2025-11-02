@@ -1,0 +1,122 @@
+{
+  "schema": "v1",
+  "enabled": true,
+  "name": "ContinuumSplit",
+  "anchor": {
+    "Screen": "BottomCenter"
+  },
+  "pos": [
+    0.0,
+    0.0
+  ],
+  "opacity": 1.0,
+  "trigger": {
+    "source": "Always",
+    "threshold": {
+      "threshold_type": "Always",
+      "amount_type": "Intensity"
+    }
+  },
+  "filter": {
+    "player": {
+      "combat": null,
+      "specs": [
+        "Chronomancer"
+      ],
+      "weapons": [],
+      "traits": [],
+      "mounts": []
+    },
+    "map": {
+      "category": [],
+      "whitelist": true,
+      "ids": []
+    }
+  },
+  "animation": null,
+  "layer": 0,
+  "elements": [
+    {
+      "enabled": true,
+      "name": "Continuum Split",
+      "anchor": "Parent",
+      "pos": [
+        -295.0,
+        -87.0
+      ],
+      "opacity": 1.0,
+      "trigger": {
+        "source": {
+          "Buff": [
+            30136
+          ]
+        },
+        "threshold": {
+          "threshold_type": "Always",
+          "amount_type": "Intensity"
+        }
+      },
+      "filter": {
+        "player": {
+          "combat": null,
+          "specs": [
+            "Chronomancer"
+          ],
+          "weapons": [],
+          "traits": [],
+          "mounts": []
+        },
+        "map": {
+          "category": [],
+          "whitelist": true,
+          "ids": []
+        }
+      },
+      "animation": null,
+      "type": "Bar",
+      "progress_kind": "Duration",
+      "max": 4.0,
+      "lower_bound": 0.0,
+      "upper_bound": 1.0,
+      "fill": [
+        0.9553244,
+        0.44549763,
+        1.0,
+        1.0
+      ],
+      "background": [
+        0.000001,
+        9.9999e-7,
+        9.9999e-7,
+        0.59162307
+      ],
+      "border_size": 2.0,
+      "border_color": [
+        0.42583856,
+        0.0,
+        0.8164251,
+        0.6161138
+      ],
+      "tick_size": 0.0,
+      "tick_color": [
+        9.999918e-7,
+        9.9999e-7,
+        0.000001,
+        0.44927537
+      ],
+      "conditions": [],
+      "size": [
+        231.0,
+        12.0
+      ],
+      "align": "Right",
+      "direction": "Right",
+      "tick_unit": "Percent",
+      "ticks": [
+        0.25,
+        0.5,
+        0.75
+      ]
+    }
+  ]
+}
