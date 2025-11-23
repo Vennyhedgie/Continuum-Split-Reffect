@@ -1,7 +1,7 @@
 {
   "schema": "v1",
   "enabled": true,
-  "name": "ContinuumSplit",
+  "name": "Continuum Split",
   "anchor": {
     "Screen": "BottomCenter"
   },
@@ -11,7 +11,9 @@
   ],
   "opacity": 1.0,
   "trigger": {
-    "source": "Always",
+    "source": {
+      "type": "Always"
+    },
     "threshold": {
       "threshold_type": "Always",
       "amount_type": "Intensity"
@@ -25,7 +27,9 @@
       ],
       "weapons": [],
       "traits": [],
-      "mounts": []
+      "mounts": [
+        "None"
+      ]
     },
     "map": {
       "category": [],
@@ -37,19 +41,17 @@
   "layer": 0,
   "elements": [
     {
-      "enabled": true,
-      "name": "Continuum Split",
+      "enabled": false,
+      "name": "Interface Larger",
       "anchor": "Parent",
       "pos": [
-        -295.0,
-        -87.0
+        0.0,
+        0.0
       ],
       "opacity": 1.0,
       "trigger": {
         "source": {
-          "Buff": [
-            30136
-          ]
+          "type": "Inherit"
         },
         "threshold": {
           "threshold_type": "Always",
@@ -59,9 +61,7 @@
       "filter": {
         "player": {
           "combat": null,
-          "specs": [
-            "Chronomancer"
-          ],
+          "specs": [],
           "weapons": [],
           "traits": [],
           "mounts": []
@@ -73,49 +73,531 @@
         }
       },
       "animation": null,
-      "type": "Bar",
-      "progress_kind": "Duration",
-      "max": 4.0,
-      "lower_bound": 0.0,
-      "upper_bound": 1.0,
-      "fill": [
-        0.9553244,
-        0.44549763,
-        1.0,
-        1.0
-      ],
-      "background": [
-        0.000001,
-        9.9999e-7,
-        9.9999e-7,
-        0.59162307
-      ],
-      "border_size": 2.0,
-      "border_color": [
-        0.42583856,
+      "type": "Group",
+      "members": [
+        {
+          "enabled": true,
+          "name": "Continuum Split",
+          "anchor": "Parent",
+          "pos": [
+            -360.99994,
+            -104.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "type": "Buff",
+              "combatant": "Player",
+              "ids": [
+                30136
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Always",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [
+                "Chronomancer"
+              ],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Bar",
+          "progress_kind": "Duration",
+          "max": 4.0,
+          "lower_bound": 0.0,
+          "upper_bound": 1.0,
+          "fill": [
+            0.9553244,
+            0.44549763,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.000001,
+            9.9999e-7,
+            9.9999e-7,
+            0.59162307
+          ],
+          "border_size": 0.0,
+          "border_color": [
+            0.42583856,
+            0.0,
+            0.8164251,
+            0.6161138
+          ],
+          "tick_size": 0.0,
+          "tick_color": [
+            9.999918e-7,
+            9.9999e-7,
+            0.000001,
+            0.44927537
+          ],
+          "conditions": [
+            {
+              "trigger": {
+                "ProgressThreshold": {
+                  "threshold_type": "Present",
+                  "amount_type": "Intensity"
+                }
+              },
+              "properties": {
+                "lower_bound": null,
+                "upper_bound": null,
+                "fill": null,
+                "background": null,
+                "border_size": 2.0,
+                "border_color": null,
+                "tick_size": null,
+                "tick_color": null
+              }
+            }
+          ],
+          "size": [
+            283.0,
+            11.999998
+          ],
+          "align": "Right",
+          "direction": "Right",
+          "tick_unit": "Percent",
+          "ticks": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      ]
+    },
+    {
+      "enabled": false,
+      "name": "Interface Large",
+      "anchor": "Parent",
+      "pos": [
         0.0,
-        0.8164251,
-        0.6161138
+        0.0
       ],
-      "tick_size": 0.0,
-      "tick_color": [
-        9.999918e-7,
-        9.9999e-7,
-        0.000001,
-        0.44927537
+      "opacity": 1.0,
+      "trigger": {
+        "source": {
+          "type": "Inherit"
+        },
+        "threshold": {
+          "threshold_type": "Always",
+          "amount_type": "Intensity"
+        }
+      },
+      "filter": {
+        "player": {
+          "combat": null,
+          "specs": [],
+          "weapons": [],
+          "traits": [],
+          "mounts": []
+        },
+        "map": {
+          "category": [],
+          "whitelist": true,
+          "ids": []
+        }
+      },
+      "animation": null,
+      "type": "Group",
+      "members": [
+        {
+          "enabled": true,
+          "name": "Continuum Split",
+          "anchor": "Parent",
+          "pos": [
+            -328.0,
+            -94.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "type": "Buff",
+              "combatant": "Player",
+              "ids": [
+                30136
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Always",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [
+                "Chronomancer"
+              ],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Bar",
+          "progress_kind": "Duration",
+          "max": 4.0,
+          "lower_bound": 0.0,
+          "upper_bound": 1.0,
+          "fill": [
+            0.9553244,
+            0.44549763,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.000001,
+            9.9999e-7,
+            9.9999e-7,
+            0.59162307
+          ],
+          "border_size": 0.0,
+          "border_color": [
+            0.42583856,
+            0.0,
+            0.8164251,
+            0.6161138
+          ],
+          "tick_size": 0.0,
+          "tick_color": [
+            9.999918e-7,
+            9.9999e-7,
+            0.000001,
+            0.44927537
+          ],
+          "conditions": [
+            {
+              "trigger": {
+                "ProgressThreshold": {
+                  "threshold_type": "Present",
+                  "amount_type": "Intensity"
+                }
+              },
+              "properties": {
+                "lower_bound": null,
+                "upper_bound": null,
+                "fill": null,
+                "background": null,
+                "border_size": 2.0,
+                "border_color": null,
+                "tick_size": null,
+                "tick_color": null
+              }
+            }
+          ],
+          "size": [
+            254.0,
+            9.999999
+          ],
+          "align": "Right",
+          "direction": "Right",
+          "tick_unit": "Percent",
+          "ticks": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      ]
+    },
+    {
+      "enabled": true,
+      "name": "Interface Normal",
+      "anchor": "Parent",
+      "pos": [
+        0.0,
+        0.0
       ],
-      "conditions": [],
-      "size": [
-        231.0,
-        12.0
+      "opacity": 1.0,
+      "trigger": {
+        "source": {
+          "type": "Inherit"
+        },
+        "threshold": {
+          "threshold_type": "Always",
+          "amount_type": "Intensity"
+        }
+      },
+      "filter": {
+        "player": {
+          "combat": null,
+          "specs": [],
+          "weapons": [],
+          "traits": [],
+          "mounts": []
+        },
+        "map": {
+          "category": [],
+          "whitelist": true,
+          "ids": []
+        }
+      },
+      "animation": null,
+      "type": "Group",
+      "members": [
+        {
+          "enabled": true,
+          "name": "Continuum Split",
+          "anchor": "Parent",
+          "pos": [
+            -295.0,
+            -86.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "type": "Buff",
+              "combatant": "Player",
+              "ids": [
+                30136
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Always",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [
+                "Chronomancer"
+              ],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Bar",
+          "progress_kind": "Duration",
+          "max": 4.0,
+          "lower_bound": 0.0,
+          "upper_bound": 1.0,
+          "fill": [
+            0.9553244,
+            0.44549763,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.000001,
+            9.9999e-7,
+            9.9999e-7,
+            0.59162307
+          ],
+          "border_size": 0.0,
+          "border_color": [
+            0.42583856,
+            0.0,
+            0.8164251,
+            0.6161138
+          ],
+          "tick_size": 0.0,
+          "tick_color": [
+            9.999918e-7,
+            9.9999e-7,
+            0.000001,
+            0.44927537
+          ],
+          "conditions": [
+            {
+              "trigger": {
+                "ProgressThreshold": {
+                  "threshold_type": "Present",
+                  "amount_type": "Intensity"
+                }
+              },
+              "properties": {
+                "lower_bound": null,
+                "upper_bound": null,
+                "fill": null,
+                "background": null,
+                "border_size": 2.0,
+                "border_color": null,
+                "tick_size": null,
+                "tick_color": null
+              }
+            }
+          ],
+          "size": [
+            231.0,
+            10.0
+          ],
+          "align": "Right",
+          "direction": "Right",
+          "tick_unit": "Percent",
+          "ticks": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
+      ]
+    },
+    {
+      "enabled": false,
+      "name": "Interface Small",
+      "anchor": "Parent",
+      "pos": [
+        0.0,
+        0.0
       ],
-      "align": "Right",
-      "direction": "Right",
-      "tick_unit": "Percent",
-      "ticks": [
-        0.25,
-        0.5,
-        0.75
+      "opacity": 1.0,
+      "trigger": {
+        "source": {
+          "type": "Inherit"
+        },
+        "threshold": {
+          "threshold_type": "Always",
+          "amount_type": "Intensity"
+        }
+      },
+      "filter": {
+        "player": {
+          "combat": null,
+          "specs": [],
+          "weapons": [],
+          "traits": [],
+          "mounts": []
+        },
+        "map": {
+          "category": [],
+          "whitelist": true,
+          "ids": []
+        }
+      },
+      "animation": null,
+      "type": "Group",
+      "members": [
+        {
+          "enabled": true,
+          "name": "Continuum Split",
+          "anchor": "Parent",
+          "pos": [
+            -267.0,
+            -77.0
+          ],
+          "opacity": 1.0,
+          "trigger": {
+            "source": {
+              "type": "Buff",
+              "combatant": "Player",
+              "ids": [
+                30136
+              ]
+            },
+            "threshold": {
+              "threshold_type": "Always",
+              "amount_type": "Intensity"
+            }
+          },
+          "filter": {
+            "player": {
+              "combat": null,
+              "specs": [
+                "Chronomancer"
+              ],
+              "weapons": [],
+              "traits": [],
+              "mounts": []
+            },
+            "map": {
+              "category": [],
+              "whitelist": true,
+              "ids": []
+            }
+          },
+          "animation": null,
+          "type": "Bar",
+          "progress_kind": "Duration",
+          "max": 4.0,
+          "lower_bound": 0.0,
+          "upper_bound": 1.0,
+          "fill": [
+            0.9553244,
+            0.44549763,
+            1.0,
+            1.0
+          ],
+          "background": [
+            0.000001,
+            9.9999e-7,
+            9.9999e-7,
+            0.59162307
+          ],
+          "border_size": 0.0,
+          "border_color": [
+            0.42583856,
+            0.0,
+            0.8164251,
+            0.6161138
+          ],
+          "tick_size": 0.0,
+          "tick_color": [
+            9.999918e-7,
+            9.9999e-7,
+            0.000001,
+            0.44927537
+          ],
+          "conditions": [
+            {
+              "trigger": {
+                "ProgressThreshold": {
+                  "threshold_type": "Present",
+                  "amount_type": "Intensity"
+                }
+              },
+              "properties": {
+                "lower_bound": null,
+                "upper_bound": null,
+                "fill": null,
+                "background": null,
+                "border_size": 2.0,
+                "border_color": null,
+                "tick_size": null,
+                "tick_color": null
+              }
+            }
+          ],
+          "size": [
+            209.0,
+            10.0
+          ],
+          "align": "Right",
+          "direction": "Right",
+          "tick_unit": "Percent",
+          "ticks": [
+            0.25,
+            0.5,
+            0.75
+          ]
+        }
       ]
     }
   ]
